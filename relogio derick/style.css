@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #f0f0f0;
+}
+
+.clock {
+  width: 300px;
+  height: 300px;
+  border: 8px solid #333;
+  border-radius: 50%;
+  position: relative;
+  background: white;
+}
+
+/* Estilo comum para todos os ponteiros */
+.hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: translateX(-50%) translateY(0);
+  background: #333;
+}
+
+/* Ponteiro das horas */
+.hour {
+  width: 6px;
+  height: 80px;
+}
+
+/* Ponteiro dos minutos */
+.minute {
+  width: 4px;
+  height: 110px;
+}
+
+/* Ponteiro dos segundos */
+.second {
+  width: 2px;
+  height: 140px;
+  background: red;
+}
+
+
+
+.number {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: center;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.number1  { transform: translate(-50%, -50%) rotate(30deg)  translateY(-130px) rotate(-30deg); }
+.number2  { transform: translate(-50%, -50%) rotate(60deg)  translateY(-130px) rotate(-60deg); }
+.number3  { transform: translate(-50%, -50%) rotate(90deg)  translateY(-130px) rotate(-90deg); }
+.number4  { transform: translate(-50%, -50%) rotate(120deg) translateY(-130px) rotate(-120deg); }
+.number5  { transform: translate(-50%, -50%) rotate(150deg) translateY(-130px) rotate(-150deg); }
+.number6  { transform: translate(-50%, -50%) rotate(180deg) translateY(-130px) rotate(-180deg); }
+.number7  { transform: translate(-50%, -50%) rotate(210deg) translateY(-130px) rotate(-210deg); }
+.number8  { transform: translate(-50%, -50%) rotate(240deg) translateY(-130px) rotate(-240deg); }
+.number9  { transform: translate(-50%, -50%) rotate(270deg) translateY(-130px) rotate(-270deg); }
+.number10 { transform: translate(-50%, -50%) rotate(300deg) translateY(-130px) rotate(-300deg); }
+.number11 { transform: translate(-50%, -50%) rotate(330deg) translateY(-130px) rotate(-330deg); }
+.number12 { transform: translate(-50%, -50%) rotate(0deg)   translateY(-130px) rotate(0deg); }
